@@ -1,0 +1,14 @@
+[tool.ruff]
+# Match your project’s Python version
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "PD"]
+ignore = ["W191"]
+per-file-ignores = { "*.ipynb" = ["ALL"] }
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+line-ending = "lf"
